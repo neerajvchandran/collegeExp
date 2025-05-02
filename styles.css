@@ -1,0 +1,409 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #2b2b2b;
+  background-color: #bface2;
+}
+
+.logo {
+  width: 5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+}
+
+.header-nav {
+  margin-left: 4rem;
+}
+
+.header-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-left: 3rem;
+}
+
+.header-nav-link {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border: 1px solid #ecf2ff;
+  font-size: 2rem;
+  color: #2b2b2b;
+  border-radius: 0 1rem 1rem 0;
+}
+.header-nav-link:hover {
+  text-decoration: none;
+
+  border: 1px solid #ff6f91;
+  font-size: 2rem;
+  color: #2b2b2b;
+  background-color: #ff6f91;
+  transition: all 0.3s;
+}
+.header-login {
+  border: 1px solid #ecf2ff;
+  padding: 2rem 4rem;
+  border-radius: 0 1rem 1rem 0;
+}
+.header-login-button {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #2b2b2b;
+}
+.header-login:hover {
+  border: 1px solid #ff6f91;
+  color: #2b2b2b;
+  background-color: #ff6f91;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.heading-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 17rem;
+  font-size: 17.5rem;
+  position: relative;
+  left: -18rem;
+}
+.A,
+.R {
+  color: #500073;
+}
+.C,
+.A2 {
+  color: #fff;
+}
+.N,
+.E {
+  color: #feba17;
+}
+.hero-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+}
+.section-hero {
+  height: 100vh;
+  overflow: hidden;
+}
+.code-icon-d {
+  width: 50vw;
+}
+
+.hero {
+  position: relative;
+}
+
+.code-icon {
+  position: absolute;
+  top: 70%; /* Vertically center the icon */
+  left: 78%; /* Horizontally center the icon */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Offset to ensure it's centered properly */
+  font-size: 50rem; /* Make the icon big */
+  opacity: 0.1; /* Low opacity for subtle background effect */
+  z-index: -1; /* Send it behind the heading */
+  color: #2b2b2b; /* Set icon color */
+}
+
+/* Styling for the heading */
+.heading-primary {
+  font-size: 20rem;
+  position: relative;
+  z-index: 1; /* Ensure the heading is in front of the icon */
+}
+.details-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  column-gap: 2rem;
+}
+.remaining-cont {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.cont {
+  font-size: 2rem;
+  align-content: center;
+}
+.pic {
+  max-width: 40rem;
+}
+.prize-section {
+  margin-top: 15rem;
+  font-size: 3rem;
+  text-align: center;
+  padding: 5rem 5rem 5rem 5rem;
+  border: 2px solid #9e88b6;
+}
+.prize-heading {
+  margin-bottom: 7rem;
+}
+.prize-more {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.ticket,
+.laptop,
+.help {
+  color: #9e88b6;
+  font-size: 6rem;
+}
+
+.sponsors {
+  padding-bottom: 5rem;
+  max-width: 120rem;
+  margin: -8rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  row-gap: 3rem;
+}
+.sponsors-img {
+  width: 12rem;
+}
+.ieee-cs {
+  width: 25rem;
+}
+.qmark {
+  width: 22rem;
+}
+.riglabs {
+  width: 22rem;
+}
+.wolfram {
+  width: 25rem;
+}
+.sybgen {
+  width: 22rem;
+}
+.interviewbuddy {
+  width: 22rem;
+  display: block;
+  margin: 3rem auto;
+}
+.sponsors-heading {
+  font-size: 8rem;
+  max-height: 20rem;
+  opacity: 0.3;
+  color: #9e88b6;
+  position: relative;
+  z-index: -1;
+  top: 25rem;
+  display: grid;
+  justify-items: center;
+}
+.ieee-sbcec {
+  margin: 0 auto;
+  display: grid;
+  justify-items: center;
+  width: 35rem;
+}
+.border-c {
+  border-bottom: 2px solid #9e88b6;
+  max-width: 120rem;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  padding: 2rem 2rem 2rem 2rem;
+}
+.contact {
+  display: flex;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.ieee-sbcec {
+  position: relative;
+  left: -30rem;
+}
+.phone {
+  color: #fff;
+  font-weight: 600;
+  position: relative;
+  right: 5rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+.icon-mobile-nav[name="menu-outline"] {
+  display: none;
+}
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+.icon-mobile-nav {
+  font-size: 5rem;
+  background-color: #bface2;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 136em) {
+  .heading-primary {
+    left: -3rem;
+  }
+  .details-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 110em) {
+  .header-login {
+    position: relative;
+    right: 5rem;
+  }
+  .heading-primary {
+    left: -3rem;
+  }
+  .details-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .header-nav-link {
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .code-icon {
+    font-size: 45rem;
+    opacity: 0.05;
+  }
+}
+@media (max-width: 81.25em) {
+  .header-login {
+    position: relative;
+    right: -45rem;
+  }
+  .icon-mobile-nav[name="menu-outline"] {
+    display: block;
+  }
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+  .header-nav {
+    z-index: 9999;
+    background-color: rgba(255, 2555, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    /* no relative needed here */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    /* transition: all 2s ease-out; */
+
+    /* hide the nav */
+    /* allows no tranistion at all */
+    /* display: none; */
+
+    /* hide it visually 1 */
+    opacity: 0;
+
+    /* make it accessible to keyboard and mouse 2 */
+    /* elements are still on page and if we dont set pointer events to none
+    while hitting tab the border or links will show up */
+    pointer-events: none;
+
+    /* hide iy from screen readers 3 */
+    visibility: hidden;
+  }
+  .nav-open .header-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+    background-color: rgba(255, 2555, 255, 0.9);
+  }
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+  .header-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+}
+@media (max-width: 77.4em) {
+  .header-login {
+    position: relative;
+    top: 7rem;
+    right: -52rem;
+  }
+}
+@media (max-width: 76.06em) {
+  .header-login {
+    position: relative;
+    top: 7rem;
+    right: -52rem;
+  }
+  .header-login {
+    border: 1px solid #ecf2ff;
+    padding: 1.5rem 2rem;
+    border-radius: 0 1rem 1em 0;
+  }
+  .header-login-button {
+    text-decoration: none;
+    font-size: 2rem;
+    color: #2b2b2b;
+  }
+}
+@media (max-width: 73.06em) {
+  .header-login {
+    position: relative;
+    top: 7rem;
+    right: -50rem;
+  }
+  .header-login {
+    border: 1px solid #ecf2ff;
+    padding: 1.5rem 2rem;
+    border-radius: 0 1rem 1em 0;
+  }
+  .header-login-button {
+    text-decoration: none;
+    font-size: 2rem;
+    color: #2b2b2b;
+  }
+}
+@media (max-width: 70.06em){
+  .header-login {
+    right: -48rem;
+  }
+}
