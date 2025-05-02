@@ -4,6 +4,6 @@ This is a simple website created as part of a homework assignment for my college
 
 If you're viewing this on any other device, you may experience poor layout.
 
---
+---
 
 Thank you for checking out the project!
